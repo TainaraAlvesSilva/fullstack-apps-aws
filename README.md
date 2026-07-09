@@ -21,6 +21,13 @@ http://projectstartercode-dev2.us-east-1.elasticbeanstalk.com/filteredimage?imag
 ### Error (422) - Missing image URL:
 http://projectstartercode-dev2.us-east-1.elasticbeanstalk.com/filteredimage
 
+## Screenshots
+
+The screenshots for this project are located in the `screenshots/` folder and include:
+
+- **eb-dashboard.png** - Elastic Beanstalk dashboard showing the environment health status
+- **endpoint-working.png** - Endpoint returning a filtered image with status 200
+- 
 ## Getting Started
 
 Clone this repo and navigate to the project folder:
