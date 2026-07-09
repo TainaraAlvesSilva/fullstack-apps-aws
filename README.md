@@ -12,7 +12,7 @@ http://projectstartercode-dev.us-east-1.elasticbeanstalk.com
 ## Testing the Endpoint
 
 ### Success (200) - Valid image URL:
-http://projectstartercode-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://images.unsplash.com/photo-1561948955-570b270e7c36?w=400
+http://projectstartercode-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
 
 ### Error (422) - Missing image URL:
 http://projectstartercode-dev.us-east-1.elasticbeanstalk.com/filteredimage
