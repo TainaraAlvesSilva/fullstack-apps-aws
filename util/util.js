@@ -11,11 +11,14 @@ const httpsAgent = new https.Agent({ rejectUnauthorized: false });
 export async function filterImageFromURL(inputURL) {
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await axios.get(inputURL, { 
+          const response = await axios.get(inputURL, { 
         responseType: 'arraybuffer',
         httpsAgent: httpsAgent,
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+          'User-Agent': 'Mozilla/5.0 (compatible; ImageFilterBot/1.0; +https://github.com/TainaraAlvesSilva/fullstack-apps-aws)',
+          'Accept': 'image/jpeg,image/png,image/*',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Referer': 'https://en.wikipedia.org/'
         }
       });
       const buffer = Buffer.from(response.data);
